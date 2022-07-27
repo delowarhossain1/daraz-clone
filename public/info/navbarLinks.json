@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "text" : "SAVE MORE ON APP",
+        "link" : "/"
+    },
+    
+    {
+        "id": 2,
+        "text" : "SELL ON DARAZ",
+        "link" : "/"
+    },
+    {
+        "id": 3,
+        "text" : "CUSTOMER CARE",
+        "link" : "/"
+    },
+    {
+        "id": 4,
+        "text" : "TRACK MY ORDER",
+        "link" : "/"
+    },
+    {
+        "id": 5,
+        "text" : "SIGNUP / LOGIN",
+        "link" : "/"
+    },
+    {
+        "id": 6,
+        "text" : "DARAZ AFFILIATE PROGRAM",
+        "link" : "/"
+    },
+    {
+        "id": 7,
+        "text" : "Language",
+        "link" : "/"
+    }
+]
