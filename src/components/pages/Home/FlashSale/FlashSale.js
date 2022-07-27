@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FlashSaleCart from "../ProductCart/FlashSaleCart";
 
 const FlashSale = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=> {
+    fetch('info/Products.json')
+    .then(res => res.json())
+    .then(data => setProducts(data))
+  }, []);
+
   // Counter
   const date = new Date();
   const days = date.getDate();
@@ -44,10 +52,11 @@ const FlashSale = () => {
 
 
             {/* Product List */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 py-5">
-            <FlashSaleCart />
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 py-5 space-x-3">
+          {
+            products?.map(product => <FlashSaleCart />)
+          }
         </div>
- 
       </div>
     </section>
   );
