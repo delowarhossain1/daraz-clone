@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FlashSaleCart from "../ProductCart/FlashSaleCart";
 
 const FlashSale = () => {
